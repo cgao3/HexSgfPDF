@@ -1,5 +1,5 @@
-# HexGamePlot
-Convert Hex game in sgf to graphical pdf
+# HexGraphics
+Convert Hex game in sgf to pdf
 
 
 ## SGF 
