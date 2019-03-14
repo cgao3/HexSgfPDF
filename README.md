@@ -16,8 +16,13 @@ View Hex sgf from [HexGUI](#).
 
 
 ## SGF to pdf
+Procedure 
 
-This repository contains 
++ sgf to plain points
++ plain points to hex-diagram 
++ hex-digram to eps
++ eps to pdf 
+
 ### How to use? 
 1. sgf2p.py
 
