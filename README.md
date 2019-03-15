@@ -1,4 +1,4 @@
-# HexGraphics
+# HexSgfPDF
 Convert Hex game in sgf to pdf
 
 ## What is SGF? 
