@@ -51,9 +51,13 @@ void translate() {
   } 
 }
 
-main() {
-  printf("/DimX 13 def\n");
-  printf("/DimY 13 def\n");
+int main(int argc, char *argv[]) {
+  int sz=13;
+  if(argc>1){
+    sz=atoi(argv[1]);
+  }
+  printf("/DimX %d def\n", sz);
+  printf("/DimY %d def\n", sz);
   printf("/Scale 1.2 def\n");
   printf("FlatTopBoard\n");
   printf("DrawHexBoard\n");

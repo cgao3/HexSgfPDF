@@ -19,7 +19,8 @@ chmod +x sgf2p.py
 chmod +x make10.pl 
 for file in "$sgf_game_dir"/*.sgf 
 do 
-    ./sgf2p.py < $file | $plain2hd > "${file%.sgf}.hexdiag" ; 
+    SZ=`cat $file | egrep -o 'SZ\[\d+\]' | cut -c4-6 | cut -d']' -f 1`
+    ./sgf2p.py < $file | $plain2hd $SZ > "${file%.sgf}.hexdiag" ; 
 done
 
 cp make10.pl "$sgf_game_dir"/
